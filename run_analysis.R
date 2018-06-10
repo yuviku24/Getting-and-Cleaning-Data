@@ -1,4 +1,5 @@
 #Downloads file and stores it in DATA folder. Folder is then unzipped
+if(!file.exists("./DATA")){dir.create("./DATA")}
 download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile = "./DATA/UCI.zip")
 unzip("./DATA/UCI.zip")
 
